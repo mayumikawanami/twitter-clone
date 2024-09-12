@@ -1,9 +1,16 @@
 <template>
-  <Tutorial/>
+  <div>
+    <SideNav />
+  </div>
 </template>
 
 <script>
+import SideNav from "~/components/SideNav.vue";
+import firebase from "~/plugins/firebase";
+
 export default {
-  name: 'IndexPage'
-}
+  components: {
+    SideNav,
+  },
+};
 </script>
